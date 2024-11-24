@@ -1,0 +1,615 @@
+/* all */
+:root {
+	--bg-primary: #957830;
+	--bg-secondary: #b9963f;
+	--Player: "Playfair Display", serif;
+	--poppins: "poppins", serif;
+}
+body {
+	font-family: "Poppins", serif;
+	font-size: 15px;
+}
+
+.h-100vh {
+	height: 100vh;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.title {
+	font-family: "Playfair Display", serif;
+	font-size: 39px;
+	font-weight: 400;
+}
+/* navber */
+.nav-link.active {
+	font-weight: bold;
+	color: var(--bg-primary) !important;
+}
+.navbar-brand img {
+	width: 80%;
+}
+
+/* sosmed bar */
+#sosmed .icon-circle {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	margin: 0 3px;
+}
+
+#sosmed .icon-circle i {
+	font-size: 0.6rem;
+}
+/* navbar */
+.nav-link {
+	margin: 0px 10px;
+}
+
+/* hero */
+#hero {
+	height: 90vh;
+	background-image: url("../images/bghero.svg");
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-content h3 {
+	font-family: "Playfair Display", serif;
+	font-size: 50px;
+	font-weight: 700;
+}
+.hero-content h6 {
+	font-family: "Playfair Display", serif;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+#hero .image-container {
+	position: absolute;
+	bottom: -50px;
+	right: 200px;
+	display: inline-block;
+	width: 300px;
+	height: 450px;
+}
+
+#hero .image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50% 50% 10px 10px;
+}
+
+.arch-frame {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	width: 100%;
+	height: 100%;
+	border: 8px solid #b9963fb2;
+	border-radius: 50% 50% 0 0 / 50%;
+	pointer-events: none;
+}
+
+/* tentang kami */
+#tentangkami {
+	padding-top: 120px;
+	padding-bottom: 50px;
+}
+.img-tentangkami {
+	filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.4));
+}
+
+/* kenapa kami */
+.img-kenapakami {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.kenapakami-content {
+	background-image: url("../images/batik.png");
+	background-position: bottom;
+	background-size: cover;
+}
+
+.kenapakami-content img {
+	width: 80%;
+	right: -35%;
+	bottom: -50px;
+}
+
+/* produk */
+#produkkami {
+	padding-top: 100px;
+}
+
+.kenapakami-body {
+	padding: 120px 50px 0 50px;
+}
+
+.custom-swiper-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	background-color: var(--bg-primary);
+	border-radius: 50%;
+	text-decoration: none;
+	color: var(--bg-primary);
+	transition: background-color 0.3s;
+	margin: 0 3px;
+}
+
+.custom-swiper-button i {
+	font-size: 30px;
+	line-height: 0;
+	color: #fff;
+}
+
+.custom-swiper-button:hover {
+	background-color: var(--bg-secondary);
+}
+
+.produk-card {
+	margin-top: 30px;
+	padding: 20px;
+	position: relative;
+	border-radius: 50px 0 50px 0;
+	text-align: center;
+	transition: background-color 0.3s;
+}
+
+.produk-card:hover {
+	background-color: #f5e1c0;
+}
+
+#produkkami .card-image {
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 40%;
+}
+
+.product-content h6 {
+	margin-top: 40px;
+	font-weight: bold;
+	color: #000;
+	font-family: "Playfair Display", serif;
+}
+
+.product-content p {
+	color: #444; /* Warna teks deskripsi */
+	font-size: 0.7rem;
+	line-height: 1.6;
+}
+
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+/* paket irit */
+#paketirit {
+	padding-top: 120px;
+	padding-bottom: 50px;
+}
+
+#paketirit .card-img {
+	position: relative;
+	height: 0;
+	padding-bottom: 80%;
+	overflow: hidden;
+}
+
+#paketirit .card-img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.3s ease;
+}
+
+#paketirit .image-container {
+	position: relative;
+	width: 200px;
+	height: 300px;
+}
+
+#paketirit .image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50% 50% 10px 10px;
+}
+
+#paketirit .arch-frame {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	width: 100%;
+	height: 100%;
+	border: 8px solid #b9963fb2;
+	border-radius: 50% 50% 0 0 / 50%;
+	pointer-events: none;
+}
+
+/* paket premium */
+#paketpremium {
+	padding-top: 120px;
+	padding-bottom: 50px;
+	background-color: #f5e1c0;
+}
+
+#paketpremium .card-img {
+	position: relative;
+	height: 0;
+	padding-bottom: 80%;
+	overflow: hidden;
+}
+
+#paketpremium .card-img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.3s ease;
+}
+#paketpremium .card-img:hover img {
+	transform: scale(1.1);
+}
+
+#paketpremium .image-container {
+	position: relative;
+	width: 200px;
+	height: 300px;
+}
+
+#paketpremium .image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50% 50% 10px 10px;
+}
+
+.nav-paket {
+	margin: 50px 0;
+}
+.nav-paket a {
+	display: inline-block;
+	text-decoration: none;
+	color: #000;
+	padding: 10px 10px;
+	border-bottom: 3px solid #000;
+	margin: 0;
+	width: 180px;
+	box-sizing: border-box;
+}
+.nav-paket .active {
+	font-weight: 600;
+	color: var(--bg-primary);
+	border-bottom: 3px solid var(--bg-primary);
+}
+
+/* gubuk */
+#gubuk-reguler {
+	padding-top: 120px;
+	padding-bottom: 50px;
+}
+
+.gubuk-content h5 {
+	font-family: var(--Player);
+	font-size: 1.5rem;
+}
+
+/* gubuk rakyat */
+#gubuk-rakyat {
+	padding-top: 120px;
+	padding-bottom: 50px;
+}
+#gubuk-rakyat .card-img {
+	position: relative;
+	height: 0;
+	padding-bottom: 80%;
+	overflow: hidden;
+}
+
+#gubuk-rakyat .card-img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: transform 0.3s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	--swiper-navigation-size: 20px;
+	--swiper-navigation-top-offset: 50%;
+	--swiper-navigation-sides-offset: 0px;
+	--swiper-navigation-color: #fff;
+	background-color: var(--bg-primary);
+	border-radius: 50px;
+	padding: 15px;
+}
+
+/* dessert */
+#dessert {
+	padding-top: 120px;
+	padding-bottom: 50px;
+	position: relative;
+}
+.card-dessert {
+	border-radius: 20px;
+	transition: opacity 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+.card-dessert:hover {
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-dessert h5 {
+	font-family: var(--Player);
+	font-weight: 700;
+	font-size: 2rem;
+}
+.card-dessert h1 {
+	font-weight: 600;
+	font-size: 52px;
+}
+
+#paketpremium ul li,
+#paketirit ul li,
+.card-dessert ul li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+#paketpremium ul li::before,
+#paketirit ul li::before,
+.card-dessert ul li::before {
+	content: "\f00c";
+	font-family: "FontAwesome";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	aspect-ratio: 1 / 1;
+	background-color: #d7fade;
+	border-radius: 50%;
+	color: #019822;
+	line-height: 1;
+	margin-right: 10px;
+}
+
+#paketpremium ul,
+#paketirit ul,
+.card-dessert ul {
+	padding-left: 0; /* Hilangkan padding bawaan */
+	list-style: none; /* Hilangkan bullet bawaan */
+}
+
+/* dessert2 */
+#dessert2 {
+	padding-top: 120px;
+	padding-bottom: 50px;
+	background-image: url("../images/deesert.png");
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.card-menu {
+	background-image: url("../images/batik.png");
+	background-position: center;
+	background-size: cover;
+}
+
+#dessert2 table {
+	width: 100%;
+}
+
+#dessert2 tr {
+	height: 2rem;
+}
+
+/* syarat */
+#syarat {
+	padding-top: 120px;
+	padding-bottom: 50px;
+}
+.img-syarat {
+	border-radius: 0 50px 50px 0;
+	width: 100%;
+	height: 80vh;
+	object-fit: cover;
+	display: block;
+}
+
+/* footer */
+#kontak {
+	padding-top: 120px;
+}
+#kontak .sosmed-footer .icon-circle {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 50%;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	margin: 0 3px;
+}
+
+#kontak .sosmed-footer .icon-circle i {
+	font-size: 1rem;
+}
+
+.form-pesan input,
+.form-pesan textarea {
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 0;
+	border: none;
+	border-bottom: 4px solid #fff;
+	color: #fff;
+}
+.form-pesan input:focus,
+.form-pesan textarea:focus {
+	background-color: transparent;
+	color: #fff;
+}
+
+.form-pesan input::placeholder,
+.form-pesan textarea::placeholder {
+	color: #fff;
+}
+.form-pesan input:active,
+.form-pesan textarea:active {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.form-pesan label {
+	margin-bottom: 10px;
+}
+
+/* testi */
+
+#testimoni {
+	padding-top: 120px;
+	padding-bottom: 50px;
+}
+.card-testi {
+	border-radius: 20px;
+	padding-top: 20px;
+	border: 1px solid var(--bg-primary);
+}
+
+.card-testi h5 {
+	font-family: var(--Player);
+}
+
+#testimoni .swiper-slide-next .card-testi {
+	background-color: var(--bg-secondary);
+	border: none;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	scale: 1.1;
+	background-image: url("../images/batik.png");
+	background-position: bottom;
+	background-size: cover;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+	/* kenapa kami */
+	.kenapakami-content img {
+		width: 100%;
+		right: -20%;
+		bottom: -50px;
+	}
+
+	/* produk */
+	#produkkami .card-image {
+		height: 50%;
+	}
+}
+
+/* size hp */
+@media (max-width: 575.98px) {
+	/* navber */
+	.navbar-brand img {
+		width: 50%;
+	}
+	/* tentang kami */
+	#tentangkami {
+		height: fit-content;
+	}
+	/* kenapa kami */
+	.kenapakami-content img {
+		width: 100%;
+		right: -20%;
+		bottom: -50px;
+	}
+	/* produk */
+	.produk-card {
+		margin-top: 40px;
+	}
+
+	#produkkami .card-image {
+		height: 50%;
+	}
+
+	.product-content h6 {
+		margin-top: 70px;
+	}
+	/* dessert2 */
+	#dessert2 tr {
+		height: 4rem;
+	}
+
+	.tabel-dessert {
+		font-size: 0.8rem;
+	}
+	/* syarat */
+	.img-syarat {
+		border-radius: 0 50px 0 50px;
+		height: 50vh;
+		margin-bottom: 30px;
+	}
+	/* testi */
+	#testimoni .swiper-slide-active .card-testi {
+		background-color: var(--bg-secondary);
+		border: none;
+		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+		color: #fff;
+		background-image: url("../images/batik.png");
+		background-position: bottom;
+		background-size: cover;
+	}
+}
+
+.tab-content {
+	display: none;
+}
+
+.tab-content.active {
+	display: block;
+}
+
+.swiper-slide:hover .card-img img {
+	transform: scale(1.1);
+}
