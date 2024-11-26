@@ -23,6 +23,10 @@ body {
 	font-size: 39px;
 	font-weight: 400;
 }
+.subtitle {
+	font-family: "Playfair Display", serif;
+	font-weight: 600;
+}
 /* navber */
 .nav-link.active {
 	font-weight: bold;
@@ -62,14 +66,9 @@ body {
 	background-size: cover;
 }
 
-.hero-content h3 {
+.hero-tagline {
 	font-family: "Playfair Display", serif;
 	font-size: 50px;
-	font-weight: 700;
-}
-.hero-content h6 {
-	font-family: "Playfair Display", serif;
-	font-size: 17px;
 	font-weight: 700;
 }
 
@@ -124,8 +123,8 @@ body {
 }
 
 .kenapakami-content img {
-	width: 80%;
-	right: -35%;
+	height: 60%;
+	right: -20%;
 	bottom: -50px;
 }
 
@@ -181,6 +180,7 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 	height: 40%;
+	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.4));
 }
 
 .product-content h6 {
@@ -226,11 +226,14 @@ body {
 	object-position: center;
 	transition: transform 0.3s ease;
 }
+#paketirit .card-img:hover img {
+	transform: scale(1.1);
+}
 
 #paketirit .image-container {
 	position: relative;
-	width: 200px;
-	height: 300px;
+	width: 250px;
+	height: 350px;
 }
 
 #paketirit .image-container img {
@@ -242,11 +245,11 @@ body {
 
 #paketirit .arch-frame {
 	position: absolute;
-	bottom: 30px;
-	left: 30px;
+	bottom: 25px;
+	left: 25px;
 	width: 100%;
 	height: 100%;
-	border: 8px solid #b9963fb2;
+	border: 5px solid #b9963fb2;
 	border-radius: 50% 50% 0 0 / 50%;
 	pointer-events: none;
 }
@@ -275,14 +278,26 @@ body {
 	object-position: center;
 	transition: transform 0.3s ease;
 }
+
+#paketpremium .arch-frame {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	width: 100%;
+	height: 100%;
+	border: 5px solid #b9963fb2;
+	border-radius: 50% 50% 0 0 / 50%;
+	pointer-events: none;
+}
+
 #paketpremium .card-img:hover img {
 	transform: scale(1.1);
 }
 
 #paketpremium .image-container {
 	position: relative;
-	width: 200px;
-	height: 300px;
+	width: 250px;
+	height: 350px;
 }
 
 #paketpremium .image-container img {
@@ -315,6 +330,10 @@ body {
 #gubuk-reguler {
 	padding-top: 120px;
 	padding-bottom: 50px;
+}
+
+.gubuk-reguler-img {
+	filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.4));
 }
 
 .gubuk-content h5 {
@@ -380,12 +399,23 @@ body {
 	font-size: 52px;
 }
 
+.btn-outline-primary {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.btn-outline-primary:hover {
+	color: #fff;
+}
+
 #paketpremium ul li,
 #paketirit ul li,
 .card-dessert ul li {
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
+	font-size: 13px;
 }
 
 #paketpremium ul li::before,
@@ -411,6 +441,11 @@ body {
 .card-dessert ul {
 	padding-left: 0; /* Hilangkan padding bawaan */
 	list-style: none; /* Hilangkan bullet bawaan */
+}
+
+.ketentuan {
+	margin-bottom: 100px !important;
+	margin-top: 30px !important;
 }
 
 /* dessert2 */
@@ -480,7 +515,8 @@ body {
 	font-size: 1rem;
 }
 
-.form-pesan input,
+.form-pesan input[type="text"],
+.form-pesan input[type="email"],
 .form-pesan textarea {
 	background-color: rgba(0, 0, 0, 0);
 	border-radius: 0;
@@ -514,7 +550,7 @@ body {
 	padding-bottom: 50px;
 }
 .card-testi {
-	border-radius: 20px;
+	border-radius: 50px 5px 50px 5px;
 	padding-top: 20px;
 	border: 1px solid var(--bg-primary);
 }
@@ -537,7 +573,7 @@ body {
 @media (min-width: 576px) and (max-width: 991.98px) {
 	/* kenapa kami */
 	.kenapakami-content img {
-		width: 100%;
+		height: 25%;
 		right: -20%;
 		bottom: -50px;
 	}
@@ -560,7 +596,7 @@ body {
 	}
 	/* kenapa kami */
 	.kenapakami-content img {
-		width: 100%;
+		height: 30%;
 		right: -20%;
 		bottom: -50px;
 	}
@@ -612,4 +648,13 @@ body {
 
 .swiper-slide:hover .card-img img {
 	transform: scale(1.1);
+}
+
+/* Gaya tombol */
+#scrollUpBtn {
+	position: fixed;
+	bottom: 100px;
+	right: 20px;
+	display: none;
+	z-index: 1000;
 }

@@ -2,12 +2,34 @@
 <html lang="en">
 
 <head>
+
+    <?php
+    $segment1 = $web->metaTitle;
+    $metaKey = $web->metaKeywords;
+    $metaDes = $web->metaDescription;
+    ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title><?= $segment1; ?></title>
+    <meta name="keywords" content="<?= $metaKey; ?>">
+    <meta name="description" content="<?= $metaDes; ?>">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<?= $segment1; ?>" />
+    <meta property="og:url" content="<?= base_url(); ?>" />
+    <meta property="og:image" content="<?= base_url('assets/images/300x200.png'); ?>">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="200">
+    <link href="<?= base_url('assets/images/48x48.png'); ?>" sizes="32x32" rel="icon">
+
+
+
     <!-- cusstom bootstrap -->
     <link href="<?= base_url('assets/css/custom.css?' . time()); ?>" rel="stylesheet">
     <link href="<?= base_url('assets/css/style.css?' . time()); ?>" rel="stylesheet">
+
+    <!-- mycss -->
+    <link href="<?= base_url() ?>assets/css/whatsapp_chat.css?<?= time() ?>" rel="stylesheet">
+    <link href="<?= base_url() ?>assets/css/animate.min.css?<?= time() ?>" rel="stylesheet">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,15 +58,11 @@
     <section id="sosmed" class="bg-primary py-2 m-0">
         <div class="container text-end">
             <div class="d-inline-block">
-                <a href="#" target="_blank" class="icon-circle">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#" target="_blank" class="icon-circle">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="#" target="_blank" class="icon-circle">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
+                <?php foreach ($sosmed as $data):  ?>
+                    <a href="<?= $data->link; ?>" target="_blank" class="icon-circle">
+                        <i class="<?= $data->icon; ?>"></i>
+                    </a>
+                <?php endforeach;  ?>
             </div>
         </div>
     </section>
@@ -63,10 +81,10 @@
                     <a class="nav-link" href="#sosmed">Beranda</a>
                     <a class="nav-link" href="#tentangkami">Tentang Kami</a>
                     <a class="nav-link" href="#kenapakami">Kenapa Kami</a>
-                    <a class="nav-link" href="#produkkami">Produk</a>
+                    <a class="nav-link" href="#produkkami">Produk Kami</a>
                     <a class="nav-link" href="#testimoni">Testimoni</a>
                     <a class="nav-link" href="#kontak">Kontak</a>
-                    <a class="btn btn-primary rounded rounded-pill text-light" href="#">Download Menu</a>
+                    <a class="btn btn-primary rounded rounded-pill text-light" <?= $web->companyProfile != '' ? "href='https://admin103.royalkelapacatering.com/upload/$web->companyProfile' target='_blank'" : "href='#'" ?>>Download Menu</a>
                 </div>
             </div>
         </div>
